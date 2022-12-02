@@ -1,3 +1,7 @@
-#hello this is 1st demo program of github.
-#hiii
-#create ec2 instance 
+resource "aws_instance" "ec2_demo"{
+    ami = "ami-074dc0a6f6c764218"
+    instance_type = "t2.micro"
+    tags = {
+        name = "github demo created"
+    }
+}
